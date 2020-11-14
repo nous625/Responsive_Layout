@@ -1,0 +1,489 @@
+/*
+** font styles
+*/
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v17-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v17-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v17-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v17-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v17-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v17-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v17-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('../fonts/open-sans-v17-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v17-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v17-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v17-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../fonts/open-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v17-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/*
+** reset styles
+*/
+
+body {
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+
+
+}
+
+body,
+ul {
+  margin:0;
+  padding:0;
+}
+
+/*
+** global elements
+*/
+
+input[type=text],
+textarea {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #1A2A3F;
+
+}
+
+button {
+  background-color: #FFF;
+  opacity: 85%;
+  border-radius: 3px;
+  border: 3px;
+  color: #1A2A3F;
+  font-weight: 100;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+
+/*
+** main layout
+*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1A2A3F;
+
+}
+
+main > div h2 {
+  color: #F25B04;
+  text-align: center;
+  font-weight: 600;
+}
+
+#main-par {
+  color: #FFF;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+/*
+** header styles
+*/
+
+header {
+  background-image: url(../images/aljordan.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+
+}
+
+#main-heading {
+  color: #FFF;
+  text-align: center;
+}
+
+
+.masthead {
+  background-image: url(../images/camel.jpg);
+  opacity: 85%;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.masthead img {
+  margin: 10px;
+}
+
+.site-title {
+	color: white;
+  text-align: center;
+  padding-bottom: 25%;
+  margin-top: 0;
+}
+.card {
+	background: white;
+	margin-bottom: 32px;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card h2 {
+  color: #F25B04;
+}
+
+.card p {
+  color:#1A2A3F;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+/*
+@media (min-width: 768px) {
+  .container {
+  max-width: 540;
+}
+}
+ */
+
+.mainnav-desktop {
+  display:none;
+  padding-top: 30px;
+  justify-content: center;
+  font-weight: 300;
+  font-weight: 400;
+  font-weight: 600;
+  font-weight: 700;
+}
+
+.mainnav-mobile {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.mainnav-mobile img {
+  fill: #FFF;
+}
+
+/*
+** content styles
+*/
+
+main {
+  margin: 0 14px;
+}
+
+.content-box p {
+  color: #F0F2EB;
+}
+
+.explore .content-box {
+  margin: 20px 0;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.explore .content-box .button-wrap {
+  position: absolute;
+  bottom: 20px;
+}
+
+.explore .content-box:first-child {
+
+  background-image: url(../images/exploreee.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.explore .content-box:last-child {
+
+  background-image: url(../images/petraa.jpg);
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.content-box.join-group {
+
+  margin-right: 20px 0;
+  height: 250px;
+  background-color:blue;
+  background-image: url(../images/joinn.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*
+ **forms
+ */
+
+.content-box.join-group form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 12px;
+}
+
+/*
+.form-join input,
+.form-join button {
+  margin: 0 20px 10px;
+
+} */
+
+
+.card-content {
+	padding: 22px;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-weight: normal;
+}
+
+.card-content p {
+	font-size: 95%;
+}
+
+/*
+** footer styles
+*/
+footer {
+  margin-top: 20px;
+  padding: 0 14px 20px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  color:#FFF;
+  text-decoration: none;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footer-brand {
+  text-align: center;
+  color: #FFF;
+
+}
+
+.footer-terms a {
+  color: #FFF;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+  .main-text-contact form {
+
+    margin: 35px auto 50px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+
+
+  .main-text-contact form label {
+
+    margin: 8px 0;
+  }
+
+  .main-text-contact form textarea {
+    max-width: 800px;
+    min-height: 80px;
+
+  }
+
+  .main-text-contact form button {
+    width: max-content;
+    margin: 8px 0;
+  }
+
+
+
+/* ---------------------------------------------------------*/
+/* ------------------ media queries ------------------------*/
+/* ---------------------------------------------------------*/
+
+/*
+** styles for only desktop
+*/
+
+@media only screen and (min-width: 900px) {
+
+  header nav .mainnav-desktop {
+    height: 300px;
+  }
+
+  .container {
+    width: 1100px;
+  }
+
+  .mainnav-mobile {
+    display: none;
+  }
+
+  .mainnav-desktop {
+    display:flex;
+  }
+
+  .mainnav-desktop ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .mainnav-desktop ul a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 5px;
+    color: #fff;
+  }
+  .mainnav-desktop ul a:hover {
+    color: #1A2A3F;
+    color: #cccccc;
+  }
+
+  /*
+  **Sub Menus
+  */
+  .mainnav-desktop .has-submenu {
+    position: relative;
+  }
+
+  .mainnav-desktop .has-submenu ul {
+    padding: 8px 8px 8px 10px;
+
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 0 none;
+  }
+
+  .mainnav-desktop .has-submenu ul li {
+    display: inline-flex;
+  }
+
+  .mainnav-desktop .has-submenu:hover ul {
+    font-size: 13px;
+    display: flex;
+    background-color: #F25B04;
+  }
+
+  main {
+    min-height: 300px;
+  }
+
+  .explore {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .explore > div {
+    width: 45%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+
+  .content-box.join-group form {
+    justify-content: center;
+  }
+
+  .form-join input,
+  .form-join button {
+    margin: 5px;
+
+  }
+
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: inherit;
+  }
+
+  .card {
+      display: flex;
+      flex: 0 1 calc(33% - 18px);
+      margin-bottom: 22px;
+
+  }
+
+  .main-text-contact #main-par {
+
+    margin: 0 auto;
+
+  }
+
+  .main-text-contact form {
+    width: 600px;
+
+  }
+
+}
